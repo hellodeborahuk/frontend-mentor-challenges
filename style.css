@@ -81,13 +81,13 @@ footer {
   cursor: pointer;
 }
 .tag-teal {
-  background-color: #47bcd4;
+  background-color: #FB923C;
 }
-.tag-purple {
-  background-color: #5e76bf;
+.tag-teal {
+  background-color: #0D9488;
 }
-.tag-pink {
-  background-color: #cd5b9f;
+.tag-cream {
+  background-color: #FFF7ED;
 }
 
 .card-body p {
