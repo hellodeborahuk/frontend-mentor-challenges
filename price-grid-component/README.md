@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/screenshot.jpg)
+![Screenshot of component solution](https://zealous-elion-5e92a4.netlify.app/images/screenshot.png)
 
 
 ### Links
