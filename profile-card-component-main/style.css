@@ -1,0 +1,56 @@
+body {
+  height: 100vh;
+  width: 375px;
+  margin: 0 auto;
+  font-family: 'Kumbh Sans', sans-serif;
+  background: url(../images/bg-pattern-bottom.svg) bottom -600px right -550px no-repeat, url(../images/bg-pattern-top.svg) top -500px left -700px no-repeat;
+  background-color: hsl(185, 75%, 39%);
+}
+
+p {
+  font-size: 12px;
+  margin: 0;
+}
+
+
+.stats-copy,
+.span-copy {
+  font-size: 18px;
+  font-weight: 700;
+}
+.age {
+  font-size: 18px;
+}
+.location {
+  font-size: 14px;
+}
+
+.container {
+  width: 95%;
+  margin: 2em auto;
+  text-align: center;
+  background: #fff;
+  border-radius: 16px;
+}
+.card-header {
+    width: 100%;
+ 
+}
+
+.user-img {
+  border-radius: 50%;
+  transform: translateY(-50%);
+  border: 6px solid #fefefe;
+}
+.stats {
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 1px solid hsl(0, 0%, 59%);
+  margin: 2em 0;
+  padding: 2em;
+}
+
+footer {
+  text-align: center;
+  font-size: 16px;
+}
