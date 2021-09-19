@@ -66,3 +66,16 @@ footer {
   text-align: center;
   font-size: 16px;
 }
+
+@media (min-width: 1200px) {
+  body {
+    background: url(../images/bg-pattern-bottom.svg) bottom -650px right -300px
+        no-repeat,
+      url(../images/bg-pattern-top.svg) top -550px left -350px no-repeat;
+    background-color: hsl(185, 75%, 39%);
+  }
+
+  .container {
+    width: 100%;
+  }
+}
