@@ -13,28 +13,28 @@ body {
 }
 
 h1 {
-    color: #0D9488;
-    font-size: 3rem;
-    text-align: center;
+  color: #0d9488;
+  font-size: 3rem;
+  text-align: center;
 }
 
 button {
-    padding: 10px 22px;
-    background: #0D9488;
-    border: none;
-    border-radius: 6px;
-    color: #fff;
-    font-weight: bold;
-    cursor: pointer;
+  padding: 10px 22px;
+  background: #0d9488;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
 }
 button:hover {
-    background: #115E59;
+  background: #115e59;
 }
 
 footer {
-    text-align: center;
-    margin-top: 3em;
-    color: #0D9488;
+  text-align: center;
+  margin-top: 3em;
+  color: #0d9488;
 }
 .container {
   display: flex;
@@ -65,9 +65,9 @@ footer {
 }
 
 .card-btns {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .tag {
@@ -81,13 +81,13 @@ footer {
   cursor: pointer;
 }
 .tag-orange {
-  background-color: #FB923C;
+  background-color: #fb923c;
 }
 .tag-teal {
-  background-color: #0D9488;
+  background-color: #0d9488;
 }
 .tag-cream {
-  background-color: #FFF7ED;
+  background-color: #fff7ed;
 }
 
 .card-body p {
@@ -110,4 +110,16 @@ footer {
 }
 .user-info small {
   color: #545d7a;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    font-size: 2rem;
+    margin: 0.5em;
+  }
 }
