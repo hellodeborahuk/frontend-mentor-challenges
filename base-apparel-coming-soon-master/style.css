@@ -28,6 +28,7 @@ h1 span {
 p {
     line-height: 1.5;
     margin-bottom: 2em;
+    font-weight: 400;
 }
 main {
   text-align: center;
