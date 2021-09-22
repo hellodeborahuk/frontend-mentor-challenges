@@ -1,14 +1,14 @@
 /* font-family: 'Josefin Sans', sans-serif; */
 
 :root {
-  --red: hsl(0, 36%, 70%);
+  --desaturated-red: hsl(0, 36%, 70%);
   --soft-red: hsl(0, 93%, 68%);
   --dark-grayish-red: hsl(0, 6%, 24%);
 }
 
 body {
   font-family: "Josefin Sans", sans-serif;
-  color: var(--red);
+  color: var(--desaturated-red);
   margin: 0;
   background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 }
@@ -26,9 +26,9 @@ h1 span {
 }
 
 p {
-    line-height: 1.5;
-    margin-bottom: 2em;
-    font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 2em;
+  font-weight: 400;
 }
 main {
   text-align: center;
@@ -54,33 +54,54 @@ main {
   display: none;
 }
 form {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 4em;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4em;
 }
 
-input[type="email"] {
-    width: 100%;
-    padding: 1.25em;
-    padding-right: 50px;
-    border-radius: 100px;
-    border: 1px solid var(--red);
-    background: transparent;
+.input-active {
+  width: 100%;
+  padding: 1.25em;
+  padding-right: 50px;
+  border-radius: 100px;
+  border: 1px solid rgba(206, 151, 151, 0.5);
+  background: transparent;
+}
+.input-error {
+  width: 100%;
+  padding: 1.25em;
+  padding-right: 50px;
+  border-radius: 100px;
+  border: 2px solid var(--soft-red);
+  background: transparent;
 }
 
-button {
-    margin-left: -50px;
-    padding: 0.75em 2.15em;
-    background-color: var(--soft-red);
-    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
-    border-radius: 100px;
-    border: none;
-    cursor: pointer;
+.active {
+  margin-left: -50px;
+  padding: 0.75em 2.15em;
+  background-color: var(--desaturated-red);
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1rem rgba(206, 151, 151, 0.5);
+}
+
+.error {
+  margin-left: -50px;
+  padding: 0.75em 3em;
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
 }
 
 ::placeholder {
-        color: var(--red);
-        opacity: 0.6;
+  color: var(--desaturated-red);
+  opacity: 0.5;
 }
 
 .attribution {
