@@ -43,10 +43,20 @@
           launch deals.
         </p>
         <form>
-          <input type="email" placeholder="Email Address" id="input" class="input-active" />
-          <button id="form-btn" class="active">
-            <img src="./images/icon-arrow.svg" alt="submit arrow"  />
-          </button>
+          <div>
+            <label id="label">
+              <input
+                type="email"
+                placeholder="Email Address"
+                id="input"
+                class="input-active"
+              />
+            </label>
+            <button id="form-btn" class="active">
+              <img src="./images/icon-arrow.svg" alt="submit arrow" />
+            </button>
+          </div>
+          <p id="error-message">Please provide a valid email</p>
         </form>
       </main>
       <footer>

@@ -53,16 +53,30 @@ main {
 .hero-desktop {
   display: none;
 }
-form {
+form div {
   display: flex;
   justify-content: center;
-  margin-bottom: 4em;
+}
+
+.label-error {
+  position: relative;
+}
+
+.label-error:before {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  background: url("images/icon-error.svg") center / contain no-repeat;
 }
 
 .input-active {
   width: 100%;
   padding: 1.25em;
   padding-right: 50px;
+  margin-bottom: 0;
   border-radius: 100px;
   border: 1px solid rgba(206, 151, 151, 0.5);
   background: transparent;
@@ -71,13 +85,14 @@ form {
   width: 100%;
   padding: 1.25em;
   padding-right: 50px;
+    margin-bottom: 0;
+
   border-radius: 100px;
   border: 2px solid var(--soft-red);
   background: transparent;
 }
 
 .active {
-  margin-left: -50px;
   padding: 0.75em 2.15em;
   background-color: var(--desaturated-red);
   background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
@@ -88,15 +103,25 @@ form {
 }
 
 .error {
-  margin-left: -50px;
-  padding: 0.75em 3em;
+  padding: 0.75em 2.15em;
   background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
   border-radius: 100px;
   border: none;
   cursor: pointer;
+  box-shadow: 0 0.5rem 1rem rgba(206, 151, 151, 0.7);
+}
+
+#error-message {
+    display: none;
+    color: var(--soft-red);
+    margin-top: 0;
+    font-size: 0.8rem;
+    text-align: left;
+    margin: 0.5rem 3rem;
 }
 
 button:hover {
+  box-shadow: 0 0.5rem 1rem rgba(29, 16, 16, 0.7);
 }
 
 ::placeholder {
