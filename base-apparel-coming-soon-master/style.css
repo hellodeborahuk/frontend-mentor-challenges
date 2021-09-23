@@ -143,14 +143,10 @@ button:hover {
     background-image: url(images/bg-pattern-desktop.svg);
   }
 
-  header {
-    order: -2;
-    border: 1px solid red;
-    flex-direction: row;
-  }
+ 
   .logo {
-    width: 100%;
-   margin-left: 6em;
+   margin-left: 8em;
+   margin-top: 4em;
   }
 
   h1,
@@ -158,7 +154,7 @@ button:hover {
     text-align: left;
   }
   h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 0.6em;
   }
   .hero-mobile {
@@ -166,17 +162,11 @@ button:hover {
   }
   .hero-desktop {
     display: block;
-    height: 100%;
-    order: 3;
   }
 
   main {
-    order: -1;
-    border: 1px solid red;
-
+    margin: 6em 8em;
   }
 
-  .attribution {
-    display: none;
-  }
+ 
 }
