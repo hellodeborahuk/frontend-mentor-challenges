@@ -58,6 +58,11 @@ form div {
   justify-content: center;
 }
 
+form label {
+  display: flex;
+  flex-grow: 1;
+}
+
 .label-error {
   position: relative;
 }
@@ -65,7 +70,7 @@ form div {
 .label-error:before {
   content: "";
   position: absolute;
-  right: 20px;
+  right: 25%;
   top: 0;
   bottom: 0;
   width: 20px;
@@ -121,7 +126,7 @@ form div {
   margin-top: 0;
   font-size: 0.8rem;
   text-align: left;
-  margin: 0.5rem 2.5rem;
+  margin: 0.6em 1.5em;
 }
 
 button:hover {
@@ -147,10 +152,9 @@ button:hover {
     background-image: url(images/bg-pattern-desktop.svg);
   }
 
- 
   .logo {
-   margin-left: 10em;
-   margin-top: 4em;
+    margin-left: 10em;
+    margin-top: 4em;
   }
 
   h1,
@@ -177,8 +181,9 @@ button:hover {
     flex-grow: 1;
   }
   #message {
-
-  margin: 0.5rem 1.125rem;
+    margin: 0.5rem 1.125rem;
+  }
+  .label-error:before {
+  right: 21%;
 }
- 
 }
