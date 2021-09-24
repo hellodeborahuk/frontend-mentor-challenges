@@ -70,7 +70,7 @@ form label {
 .label-error:before {
   content: "";
   position: absolute;
-  right: 25%;
+  right: 70px;
   top: 0;
   bottom: 0;
   width: 20px;
@@ -183,7 +183,5 @@ button:hover {
   #message {
     margin: 0.5rem 1.125rem;
   }
-  .label-error:before {
-  right: 21%;
-}
+
 }
