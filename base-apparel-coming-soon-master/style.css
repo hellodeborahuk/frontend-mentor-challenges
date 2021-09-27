@@ -11,6 +11,7 @@ body {
   color: var(--desaturated-red);
   margin: 0;
   background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  height: 100vh;
 }
 
 h1 {
