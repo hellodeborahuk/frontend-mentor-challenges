@@ -29,6 +29,13 @@
   --font-Family: "Rubik", sans-serif;
 }
 
+/* Typography */
+
+h2 {
+  font-weight: 300;
+  font-size: 3rem;
+}
+
 body {
   background-color: var(--very-dark-blue);
   color: white;
@@ -38,12 +45,44 @@ body {
 
 .box {
   background-color: var(--dark-blue);
+  border-radius: 16px;
+}
+
+.box-bg {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  background-color: var(--light-red-work);
+}
+
+.box-bg img {
+  width: 50px;
 }
 
 .container {
   display: grid;
-  gap: 1em;
+  gap: 1.5em;
   margin: 1em;
+}
+
+.report {
+  background-color: var(--dark-blue);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+.report-profile {
+  padding: 1em;
+  background-color: var(--color-blue);
+  border-radius: 16px;
+}
+
+.profile-img {
+  border-radius: 50%;
+  border: 2px solid white;
+  width: 50px;
+}
+
+.report-time {
+  padding: 1em;
 }
 
 @media (min-width: 480px) {
