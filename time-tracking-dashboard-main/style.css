@@ -31,11 +31,24 @@
 
 /* Typography */
 
+h1 {
+	font-weight: 300;
+	font-size: 4rem;
+}
+
 h2 {
   font-weight: 300;
   font-size: 3rem;
 }
 
+h4 {
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+p {
+	color: var(--pale-blue);
+}
 body {
   background-color: var(--very-dark-blue);
   color: white;
@@ -58,6 +71,14 @@ body {
   width: 50px;
 }
 
+.box-info {
+	padding: 1em;
+}
+
+.box-title {
+	display: flex;
+	justify-content: space-between;
+}
 .container {
   display: grid;
   gap: 1.5em;
