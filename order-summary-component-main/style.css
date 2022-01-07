@@ -1,0 +1,117 @@
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  background-color: var(--pale-blue);
+  line-height: 1.5;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+.container {
+  background-color: white;
+  border-radius: 20px;
+  margin: 2em 3em;
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 30%;
+    margin: 2em 0;
+  }
+
+  .main {
+    padding: 2em;
+  }
+}
+
+.hero-image {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.plan {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+  padding: 1em;
+  background-color: var(--very-pale-blue);
+  border-radius: 10px;
+}
+
+.copy {
+  padding: 0 2em;
+  color: var(--desaturated-blue);
+}
+
+.plan-left {
+  display: flex;
+  gap: 1em;
+}
+
+.plan-price h2 {
+  margin: 0;
+}
+
+.plan-price p {
+  margin: 0;
+  color: var(--desaturated-blue);
+}
+
+button {
+  display: block;
+  margin: 2em auto;
+  width: 100%;
+  background-color: var(--bright-blue);
+  border: none;
+  border-radius: 10px;
+  padding: 1em 2em;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  -webkit-box-shadow: 0px 13px 20px -3px rgba(56, 41, 224, 0.38);
+  box-shadow: 0px 13px 20px -3px rgba(56, 41, 224, 0.38);
+}
+
+.cancel {
+    font-weight: 900;
+    color: var(--desaturated-blue)
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
